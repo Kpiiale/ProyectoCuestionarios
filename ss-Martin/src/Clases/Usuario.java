@@ -1,40 +1,17 @@
 package Clases;
 
 public class Usuario {
-    private String nombre;
-    private String apellido;
     private int cedula;
     private String usuario;
     private String contrasena;
-    private String horario;
-    private String rol;
+    private String tipo;
 
-    public Usuario(String nombre, String apellido, int cedula, String usuario, String contrasena, String horario, String rol) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Usuario(int cedula, String usuario, String contrasena, String tipo) {
         this.cedula = cedula;
         this.usuario = usuario;
         this.contrasena = contrasena;
-        this.horario = horario;
-        this.rol = rol;
+        this.tipo = tipo;
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
     public int getCedula() {
         return cedula;
     }
@@ -59,32 +36,21 @@ public class Usuario {
         this.contrasena = contrasena;
     }
 
-    public String getHorario() {
-        return horario;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setHorario(String horario) {
-        this.horario = horario;
-    }
-
-    public String getRol() {
-        return rol;
-    }
-
-    public void setRol(String rol) {
-        this.rol = rol;
+    public void setTipo(String rol) {
+        this.tipo = tipo;
     }
 
     @Override
     public String toString() {
         return "Usuario{" +
-                "nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
                 ", cedula=" + cedula +
                 ", usuario='" + usuario + '\'' +
                 ", contrasena='" + contrasena + '\'' +
-                ", horario='" + horario + '\'' +
-                ", rol='" + rol + '\'' +
+                ", tipo='" + tipo + '\'' +
                 '}';
     }
 

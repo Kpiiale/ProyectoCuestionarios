@@ -8,10 +8,9 @@ public class ListaUsuarios {
     public List<Usuario> usuarios;
     public ListaUsuarios() {
         usuarios=new ArrayList<>();
-        usuarios.add(new Usuario("Martin Sebastian","Fuentes Escobar",
-                1729253367,"Martin170503","martin123","Matutino: 07:00-12:00","Estudiante"));
-        usuarios.add(new Usuario("A B","F E",
-                1729253368,"Lartin170503","lartin123","Todos","Profesor"));
+        usuarios.add(new Usuario(1709131336, "Andres", "Qwwe123", "Estudiante"));
+        usuarios.add(new Usuario(
+                1729253368,"Lartin170503","lartin123","Profesor"));
     }
     //------------------------------VERIFICACIONES------------------------------------------------
     public boolean verificarContra(String usuario,String contrasena) throws Exception {
@@ -97,9 +96,7 @@ public class ListaUsuarios {
 
         for (Usuario u : usuarios) {
             if (u.getCedula()==dato.getCedula()) {
-                u.setNombre(dato.getNombre());
-                u.setApellido(dato.getApellido());
-                u.setRol(dato.getRol());
+                u.setTipo(dato.getTipo());
                 u.setCedula(dato.getCedula());
                 u.setUsuario(dato.getUsuario());
                 u.setContrasena(dato.getContrasena());
