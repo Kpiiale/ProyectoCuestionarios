@@ -43,6 +43,10 @@ public class Usuario {
     public void setTipo(String rol) {
         this.tipo = tipo;
     }
+    public boolean validarContrasena(String contrasena) {
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$%^&+=!]).{8,}$";
+        return contrasena.matches(regex);
+    }
 
     @Override
     public String toString() {
