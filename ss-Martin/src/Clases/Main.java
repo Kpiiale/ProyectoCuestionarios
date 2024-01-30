@@ -104,6 +104,7 @@ public class Main {
             }
         } while (op != 7);
     }
+   
 
     private static boolean hayEstudiantesRegistrados() {
         return !Estudiante.getListaEstudiantes().isEmpty();
